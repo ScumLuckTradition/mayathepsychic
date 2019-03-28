@@ -20,7 +20,11 @@
 
 #box1{height: 50px;
 width: 300px;
-}
+border-bottom: dashed #3b363b}
+
+#box2{height: 25px;
+      width:50px;
+    border-top:dashed #3b363b}
 
     .w{text-decoration: underline;}
 
@@ -30,31 +34,61 @@ width: 300px;
 }
 
   a {display: block;
+color: Black;
 width: 150px;
 padding: 20px;
-transition: background 1s; }
+transition: background 1s;}
 
 a:hover {background: red;
 border-radius: 20px;}
 
+.uh {
+  width: 100px;
+  height: 100px;
+  background-color: ;
+animation-name: example;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes example {
+  0% {
+    transform: translate(300px, 30px);
+  }
+
+  25% {
+
+    transform: translate(500px, 60px);
+  }
+  35% {transform: translate(600px, 49px);
+  }
+  50%{
+  transform: translate(900px, 400px);
+  }
+  65%{transform: translate(900px,1000px)}
+  75%{
+    transform: translate(1000px, 600px);
+  }
+}
 </style>
 </head>
 <body>
   <div><h1><span class="w">Welcome</span> to my <span class="w">welcome</span> page</h1></div>
-<div>
-  <h2>Here are some links to various things </h2>
-</div>
+<div id="box1"><h2>Here are some links to various</h2></div>
+<div id="box2"<h2>things</h2></div>
   <ul>
     <li>
-      <a href="#">link text</a>
+      <a href="images.html">My art</a>
     </li>
     <li>
-      <a href="#">link text</a>
+      <a href="transformspage.html">relm of unholy beings</a>
     </li>
     <li>
-      <a href="#">link text</a>
+      <a href="#">????</a>
     </li>
   </ul>
+  <div class="uh"><p>im not cut out the best right now but i will be soon </p></div>
+  <img src="alis-pastry.gif" alt="guy running with gun" class="uh"/>
 </body>
 
 </html>
