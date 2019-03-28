@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -9,154 +9,52 @@
     body {
       background-image: url("Yes.jpg");
       color: #330000;
-      font-family: 'acme', sans-serif;
-    }
+      font-family: 'acme', sans-serif;}
 
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-    }
+      div {height: 100px;
+      width: 400px;
+      border-radius: 20px;
+      border: solid Black 10px;
+    background-color: #3B363B;
+    padding-left: 10px;}
 
-    a {
-      color: black;
-      text-decoration: underline;
-      display: block;
-      background: maroon;
-      width: 200px;
-    }
+#box1{height: 50px;
+width: 300px;
+}
 
-    a:hover {
-      background: black;
-    }
+    .w{text-decoration: underline;}
 
-    a:active {
-      color: black;
-      background color: white;
-      width: 800;
-      height: 300;
-    }
+    ul { list-style-type: none;
+    margin:0;
+  padding:0;
+}
 
-    div {
-      background: #2e2e2e;
-      width: 450px;
-      height: 90px;
-      padding: 10px;
-      border: 10px solid black;
-      margin: 5px;
-    }
+  a {display: block;
+width: 150px;
+padding: 20px;
+transition: background 1s; }
 
-    .douche {
-      background: #2e2e2e;
-      width: 200px;
-      height: 30px;
-      padding: 10px;
-    }
+a:hover {background: red;
+border-radius: 20px;}
 
-    .w {
-      text-decoration: underline;
-      }
-
-      .cube {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      width: 100%;
-      backface-visibility: visible;
-      perspective-origin: 150% 150%;
-      transform-style: preserve-3d;
-      margin-top: 200px;
-  }
-
-  .face {
-      display: block;
-      position: absolute;
-      width: 200px;
-      height: 200px;
-      border: none;
-      line-height: 200px;
-      font-family: sans-serif;
-      font-size: 60px;
-      color: white;
-      text-align: center;
-  }
-
-  /* Define each face based on direction */
-  .front {
-      background: rgba(0, 0, 0, 0.3);
-      transform: translateZ(100px);
-  }
-
-  .back {
-      background: rgba(0, 255, 0, 1);
-      color: black;
-      transform: rotateY(180deg) translateZ(100px);
-  }
-
-  .right {
-      background: rgba(196, 0, 0, 0.7);
-      transform: rotateY(90deg) translateZ(100px);
-  }
-
-  .left {
-      background: rgba(0, 0, 196, 0.7);
-      transform: rotateY(-90deg) translateZ(100px);
-  }
-
-  .top {
-      background: rgba(196, 196, 0, 0.7);
-      transform: rotateX(90deg) translateZ(100px);
-  }
-
-  .bottom {
-      background: rgba(196, 0, 196, 0.7);
-      transform: rotateX(-90deg) translateZ(100px);
-  }
-
-  .cube {
-      perspective: 800px;
-  }
-
-  .cube {
-      animation: rotate 1.39s linear infinite;
-  }
-
-  @keyframes rotate {
-      from {
-          transform: rotateY(-180deg);
-      }
-      to {
-          transform: rotateY(-24deg);
-      }
-  }
-  </style>
-
+</style>
+</head>
 <body>
-  <div>
-    <h1><span class= "w">Welcome</span> to my <span class= "w">welcome</span> screen
-  </div>
-  <div class="douche">
-<ul>
-  <p>
-    Heres some links
-  </p>
-</ul>
-    <li><a href="#">idontwork.com</a></li>
-      <li><a href="images.html">classimagesthing.com</a></li>
-    </ul>
+  <div><h1><span class="w">Welcome</span> to my <span class="w">welcome</span> page</h1></div>
+<div>
+  <h2>Here are some links to various things </h2>
 </div>
-
-<div class="cube">
-    <div class="face front">it ate my div</div>
-    <div class="face back"><img src="yes.jpg" /></div>
-    <div class="face right"><img src="yes.jpg" /></div>
-    <div class="face left">im lost</div>
-    <div class="face top">ur gay lol</div>
-    <div class="face bottom">it ate my box</div>
-</div>
-
-<!-- some of the code adapted from https://developer.mozilla.org/en-US/docs/Web/CSS/perspective -->
+  <ul>
+    <li>
+      <a href="#">link text</a>
+    </li>
+    <li>
+      <a href="#">link text</a>
+    </li>
+    <li>
+      <a href="#">link text</a>
+    </li>
+  </ul>
 </body>
 
 </html>
