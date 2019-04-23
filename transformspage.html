@@ -17,31 +17,40 @@
     }
 
     #box1 {transition: transform 2s, border-radius 1s;
-    height: 300px}
+    height: 250px;
+    width:  300px;
+  background-image: url("maxresdefault.jpg");
+ }
 
     #box1:hover {transform: rotate(45deg);
     border-radius: 20px;
   background-image: url("maxresdefault.jpg");
   background-size:cover;}
 
-    #box2 {}
+    #box2 {transition: 1s;
+    background-color: black}
 
     #box2:hover {transform: translateX(300px);
   background-image: url("mchammer.jpg");
-  background-size: cover;)
+  background-size: cover;
   }
 
-    #box3 {}
+    #box3 {transition: transform 5s;
+    height: 400px}
 
-    #box3:hover {}
+    #box3:hover {transform: rotate(75deg);}
 
-    #box4 {}
+    #box4 {background-image: url("images.jpg")}
 
-    #box4:hover {}
+    #box4:hover {transition: 1s;
+    transform: rotate(360deg)}
 
-    #box5 {}
+    #box5 {transition: 2s;
+    background-image: url("alis-pastry.gif");
+  background-color: white;}
 
-    #box5:hover {}
+    #box5:hover {transform: scaleX(300);
+    transform: scaleY(500);}
 
     #box6 {}
 
@@ -58,7 +67,12 @@
 </head>
 
 <body>
-
+<div id="box1"></div>
+<div id="box2">cant touch this</div>
+<div id="box4"></div>
+<p>hi</p>
+<div id="box3"><p>this was gonna be a cannon but im not skilled enough</p></div>
+<div id="box5"></div>
 </body>
 
 </html>
