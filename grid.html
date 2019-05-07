@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>grid</title>
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 10px;
+    }
+
+    .span-col-2 {
+      grid-column: span 2 / auto;
+    }
+
+    .span-col-3 {
+      grid-column: span 3 / auto;
+    }
+
+    #title{
+      height: 100px;
+      border: solid black 10px;
+      background-color: Grey;
+    }
+#image{
+  height: 100px;
+  border: solid black 10px;
+  Background-color: Gray;
+}
+#nav{
+  height: 250px;
+  border: solid black 10px;
+  background-color: Gray;
+}
+#article{
+  height: 400px;
+  border: solid black 10px;
+  background-color: Gray;
+}
+#footer{
+  height:100px;
+  border: solid black 10px;
+  background-color: Gray;
+}
+a {display: block;
+color: #330000;
+width: 150px;
+padding: 20px;
+transition: background 1s;}
+
+a:hover {background: Gray;
+border-radius: 20px;
+border: Solid Black 10px;}
+
+ul { list-style-type: none;
+margin:0;
+padding:0;
+}
+.w{ text-decoration: underline;}
+  </style>
+</head>
+
+<body>
+
+  <div class="grid">
+    <div class="span-col-2" id="title"><h1><span class="w">Welcome</span> to the <span class="w">welcome</span> page</h1></div>
+    <div id="image"><p>This will be an image soon</p></div>
+    <div id="nav">  <ul>
+        <li>
+          <a href="images.html">My art</a>
+        </li>
+        <li>
+          <a href="transformspage.html">relm of unholy beings</a>
+        </li>
+        <li>
+          <a href="#">things that move because you're having a bad day</a>
+        </li>
+      </ul></div>
+    <div class="span-col-2" id="article"><p>my name is Ozzy and uh i do art <sub>sometimes</sub></p></div>
+    <div class="span-col-3" id="footer"><h1>This is a footer to my website, pay it no mind. </h1></div>
+  </div>
+</body>
+
+</html>
